@@ -1,0 +1,95 @@
+Started POST "/promotion/check_promotion" for ::1 at 2022-04-14 16:05:33 +0800
+Processing by PromotionController#check_promotion as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"7"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"56000"}}
+[31mUnpermitted parameter: :products. Context: { controller: PromotionController, action: check_promotion, request: #<ActionDispatch::Request:0x0000023420f67600>, params: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"7"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"56000"}, "controller"=>"promotion", "action"=>"check_promotion"} }[0m
+qwert undefined method `range_start' for nil:NilClass
+Completed 200 OK in 10ms (Views: 0.2ms | Allocations: 4689)
+
+
+Started GET "/order" for ::1 at 2022-04-14 16:06:57 +0800
+Processing by OrderController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering order/index.html.erb within layouts/application
+  Rendered order/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1920)
+Completed 200 OK in 12ms (Views: 7.7ms | Allocations: 2967)
+
+
+Started POST "/promotion/check_promotion" for ::1 at 2022-04-14 16:07:00 +0800
+Processing by PromotionController#check_promotion as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}}
+[31mUnpermitted parameter: :products. Context: { controller: PromotionController, action: check_promotion, request: #<ActionDispatch::Request:0x0000023420d8cce0>, params: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}, "controller"=>"promotion", "action"=>"check_promotion"} }[0m
+Completed 200 OK in 12ms (Views: 0.1ms | Allocations: 2710)
+
+
+Started POST "/promotion/check_promotion" for ::1 at 2022-04-14 16:07:19 +0800
+Processing by PromotionController#check_promotion as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"6"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"48000"}}
+[31mUnpermitted parameter: :products. Context: { controller: PromotionController, action: check_promotion, request: #<ActionDispatch::Request:0x0000023420909498>, params: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"6"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"48000"}, "controller"=>"promotion", "action"=>"check_promotion"} }[0m
+Completed 200 OK in 10ms (Views: 0.1ms | Allocations: 2575)
+
+
+Started GET "/order" for ::1 at 2022-04-14 16:08:30 +0800
+Processing by OrderController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering order/index.html.erb within layouts/application
+  Rendered order/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 781)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1936)
+Completed 200 OK in 12ms (Views: 8.3ms | Allocations: 2986)
+
+
+Started POST "/promotion/check_promotion" for ::1 at 2022-04-14 16:08:33 +0800
+Processing by PromotionController#check_promotion as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}}
+[31mUnpermitted parameter: :products. Context: { controller: PromotionController, action: check_promotion, request: #<ActionDispatch::Request:0x000002342080a2b8>, params: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}, "controller"=>"promotion", "action"=>"check_promotion"} }[0m
+Completed 200 OK in 8ms (Views: 0.1ms | Allocations: 2481)
+
+
+Started GET "/order" for ::1 at 2022-04-14 16:10:30 +0800
+Processing by OrderController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering order/index.html.erb within layouts/application
+  Rendered order/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 408)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1491)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 2020)
+
+
+Started POST "/promotion/check_promotion" for ::1 at 2022-04-14 16:10:33 +0800
+Processing by PromotionController#check_promotion as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}}
+[31mUnpermitted parameter: :products. Context: { controller: PromotionController, action: check_promotion, request: #<ActionDispatch::Request:0x0000023420a01cd8>, params: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}, "controller"=>"promotion", "action"=>"check_promotion"} }[0m
+Completed 200 OK in 6ms (Views: 0.1ms | Allocations: 2058)
+
+
+Started GET "/order" for ::1 at 2022-04-14 16:18:08 +0800
+Processing by OrderController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering order/index.html.erb within layouts/application
+  Rendered order/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1667)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 17619)
+Completed 200 OK in 77ms (Views: 62.3ms | Allocations: 20298)
+
+
+Started POST "/promotion/check_promotion" for ::1 at 2022-04-14 16:18:10 +0800
+Processing by PromotionController#check_promotion as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}}
+[31mUnpermitted parameter: :products. Context: { controller: PromotionController, action: check_promotion, request: #<ActionDispatch::Request:0x0000026aef420278>, params: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}, "controller"=>"promotion", "action"=>"check_promotion"} }[0m
+Completed 200 OK in 8ms (Views: 0.1ms | Allocations: 2605)
+
+
+Started GET "/order" for ::1 at 2022-04-14 16:18:27 +0800
+Processing by OrderController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering order/index.html.erb within layouts/application
+  Rendered order/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 410)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1494)
+Completed 200 OK in 10ms (Views: 8.7ms | Allocations: 2004)
+
+
+Started POST "/promotion/check_promotion" for ::1 at 2022-04-14 16:18:30 +0800
+Processing by PromotionController#check_promotion as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}}
+[31mUnpermitted parameter: :products. Context: { controller: PromotionController, action: check_promotion, request: #<ActionDispatch::Request:0x0000026aef5581e0>, params: {"authenticity_token"=>"[FILTERED]", "cart"=>{"products"=>[{"name"=>"電腦螢幕", "nums"=>"5"}, {"name"=>"音響", "nums"=>"0"}, {"name"=>"鍵盤滑鼠", "nums"=>"0"}, {"name"=>"藍芽耳機", "nums"=>"0"}, {"name"=>"SWITCH", "nums"=>"0"}, {"name"=>"JOYCON", "nums"=>"0"}, {"name"=>"(SWITCH)PRO手把", "nums"=>"0"}], "sum"=>"40000"}, "controller"=>"promotion", "action"=>"check_promotion"} }[0m
+Completed 200 OK in 6ms (Views: 0.1ms | Allocations: 2051)
+
+

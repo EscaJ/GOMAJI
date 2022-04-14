@@ -1,0 +1,5 @@
+<h2>使用者登入</h2>
+<%= form_for :login_form,url: {action: :login} do |f|%>
+    <input name='login_user'/>
+    <%= f.submit '登入' %>
+<% end %>

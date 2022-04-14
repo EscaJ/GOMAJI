@@ -1,0 +1,79 @@
+<h4>您好! 使用者<%= @user.user_id %> <%= link_to "<span style='cursor:pointer;color:red' id='logout_lnk'>[登出]</span>".html_safe ,{controller: '/user',action: :logout}%></h4>
+
+<%= form_for :form,url: '',html: {id: 'order_form'} do |f|%>
+<table>
+    <thead>
+        <tr>
+            <th>商品</th>
+            <th>價格</th>
+            <th>數量</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @products.each do |h|%>
+            <tr>
+                <td>
+                    <%= h.name %>
+                    <input  value='<%= h.name %>' style='display:none'/>
+                </td>
+                <td><%= h.price %></td>
+                <td>
+                    <input class='product_num' data-name='<%= h.name %>' data-price='<%= h.price %>' value='0'/>
+                </td>
+            </tr>
+        <% end %>
+        <tr>
+            <td></td>
+            <td>總金額</td>
+            <td>
+                <input id='sum_input' value='0' readonly/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='4' id='promotion_td'>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<% end %>
+
+
+<script>
+    //console.log('123')
+    var nums_objs = document.getElementsByClassName("product_num");
+    var sum_obj = document.getElementById('sum_input')
+    var result_td = document.getElementById('promotion_td')
+    Array.prototype.forEach.call(nums_objs,function(elem){
+        elem.addEventListener("change",caculate_sum_check_promotion,false)
+    });
+    function caculate_sum_check_promotion(e){
+        var lens = nums_objs.length
+        var sum = 0
+        var formdata = new FormData(document.getElementById('order_form'))
+        Array.prototype.forEach.call(nums_objs,function(elem){
+            var price = elem.dataset.price
+            sum += price * elem.value
+            formdata.append('cart[products][][name]',elem.dataset.name)
+            formdata.append('cart[products][][nums]',elem.value)
+        })
+        sum_obj.value = sum
+        formdata.append('cart[sum]',sum)
+        formdata.append('authenticity_token',formdata.get('authenticity_token'))
+        fetch('<%= url_for(controller: '/promotion' ,action: :check_promotion)%>', {
+            method: 'POST',
+            body: formdata,
+            headers: {
+                'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            }
+        }).then((response) => response.json())
+        .then((responseData) => {
+            console.log(responseData);
+            result_td.innerHTML = responseData.msg
+            if (responseData.resp == 'success'){
+                sum_obj.value = responseData.new_sum
+            }
+        })
+    }
+
+
+</script>
